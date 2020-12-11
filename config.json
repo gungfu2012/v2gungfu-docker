@@ -3,7 +3,7 @@
     "loglevel": "warning"
   },
   "inbound": {
-    "protocol": "vmess",
+    "protocol": "any",
     "port": 8080,
     "settings": {
       "clients": [
