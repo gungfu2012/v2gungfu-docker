@@ -1,4 +1,4 @@
-FROM golang:1.10.0
+FROM alpine:latest
 LABEL maintainer "gungfu Community <dev@v2gungfu.org>"
 
 WORKDIR /go/src/app
