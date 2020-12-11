@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM} alpine:latest
+FROM --platform=${TARGETPLATFORM} golang:latest
 LABEL maintainer "V2Fly Community <dev@v2fly.org>"
 
 WORKDIR /root
