@@ -1,15 +1,11 @@
-FROM --platform=${TARGETPLATFORM} golang:latest
+FROM golang:latest
 LABEL maintainer "V2Fly Community <dev@v2fly.org>"
 
-WORKDIR /root
-ARG TARGETPLATFORM
-COPY v2ray.sh /root/v2ray.sh
+WORKDIR /go/src/app
+
+COPY v2gungfu ./v2gungfu
 
 RUN set -ex \
-	&& apk add --no-cache tzdata openssl ca-certificates \
-	&& mkdir -p /etc/v2ray /usr/local/share/v2ray /var/log/v2ray \
-	&& chmod +x /root/v2ray.sh \
-	&& /root/v2ray.sh "${TARGETPLATFORM}"
+	&& chmod +x ./v2gungfu
 
-VOLUME /etc/v2ray
-CMD [ "/usr/bin/v2ray", "-config", "/etc/v2ray/config.json" ]
+CMD [ "./v2gungfu" ]
