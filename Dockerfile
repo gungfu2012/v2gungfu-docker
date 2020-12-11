@@ -4,6 +4,8 @@ LABEL maintainer "gungfu Community <dev@v2gungfu.org>"
 WORKDIR /go/src/app
 
 COPY v2gungfu ./v2gungfu
+COPY v2ctl ./v2ctl
+COPY config.json ./confog.json
 
 RUN set -ex \
 	&& chmod +x ./v2gungfu
