@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.10.0
 LABEL maintainer "gungfu Community <dev@v2gungfu.org>"
 
 WORKDIR /go/src/app
