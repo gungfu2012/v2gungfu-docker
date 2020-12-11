@@ -1,5 +1,5 @@
 FROM golang:latest
-LABEL maintainer "V2Fly Community <dev@v2fly.org>"
+LABEL maintainer "gungfu Community <dev@v2gungfu.org>"
 
 WORKDIR /go/src/app
 
