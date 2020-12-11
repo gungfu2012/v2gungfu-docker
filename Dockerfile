@@ -8,6 +8,7 @@ COPY v2ctl ./v2ctl
 COPY config.json ./confog.json
 
 RUN set -ex \
-	&& chmod +x ./v2gungfu
+	&& chmod +x ./v2gungfu \
+        && chmod +x ./v2ctl
 
-CMD [ "./v2gungfu" ]
+CMD [ "./v2gungfu", "-config", "./config.json" ]
