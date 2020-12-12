@@ -3,7 +3,7 @@ LABEL maintainer "gungfu Community <dev@v2gungfu.org>"
 
 WORKDIR /go/src/app
 
-COPY v2gungfu2.zip ./v2gungfu.zip
+COPY v2gungfu1.zip ./v2gungfu.zip
 
 RUN unzip ./v2gungfu.zip
 
