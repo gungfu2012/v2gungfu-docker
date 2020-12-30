@@ -26,4 +26,4 @@ RUN set -ex \
 	&& chmod +x ./v2gungfu \
         && chmod +x ./v2ctl
 
-CMD [ "./v2gungfu", "-config=https://raw.githubusercontent.com/gungfu2012/config-file/main/config-http.json" ]
+CMD [ "./v2gungfu", "-config=https://raw.githubusercontent.com/gungfu2012/config-file/main/config.json" ]
