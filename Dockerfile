@@ -20,7 +20,7 @@ COPY v2gungfu1.zip ./v2gungfu.zip
 
 RUN unzip ./v2gungfu.zip
 
-RUN date -u
+#RUN date -u
 
 RUN set -ex \
 	&& chmod +x ./v2gungfu \
